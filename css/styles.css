@@ -2,91 +2,189 @@
 font-family: 'Hind', sans-serif;
 font-family: 'Montserrat', sans-serif;
 */
+
+a:hover {
+	text-decoration: none;
+}
 .container {
 	max-width: 1920px;
 	margin: 0 auto;
 	overflow: hidden;
 	padding-right: 0;
 	padding-left: 0;
-}
-
-
+	}
 
 .main {
-	max-height: 1082px;
+	max-height: 860px;
 	width: 100%;
 	background: url(../img/main_bg.jpg) no-repeat;
 	background-size: cover;
 	position: relative;
-}
+	}
 
 .main__logo {
 	position: absolute;
 	top: -30px;
-}
+	}
 
 .main__content {
 	margin-top: 315px;
-	margin-bottom: 50px;
-}
+	margin-bottom: 70px;
+	}
 
 .main__content h1 {
 	font-family: 'Montserrat', sans-serif;
 	font-size: 25px;
 	color: #44a09b;
 	font-weight: 600;
-}
+	}
 
 .main__content h2 {
 	font-family: 'Montserrat', sans-serif;
 	font-size: 35px;
 	line-height: 1.5;
 	color: #000;
-}
+	}
 .main__content h2 span {
 	font-weight: bold;
-}
-.button {
+	}
+.butt {
 	position: relative;
-}
-.button p {
+	}
+.butt p {
 	color: #ff8141;
 	font-family: 'Montserrat', sans-serif;
 	font-size: 17px;
-}
-.button input {
+	font-weight: 600;
+	}
+.butt input {
 	font-family: 'Montserrat', sans-serif;
 	display: block;
-	padding: 10px 90px;
-	font-size: 20px;
+	padding: 10px 88px;
+	font-size: 19px;
 	font-weight: bold;
 	color: #fff;
 	background-color: #ff8141;
 	border: none;
 	border-radius: 25px;
 	margin-bottom: 130px;
-}
+	position: absolute;
+	}
 .white_bg {
-	height: 150px;
+	height: 130px;
 	width: 600px;
 	position: absolute;
-	top: -37px;
+	top: -25px;
 	left: -55px;
 	background: #fff;
 	border-radius: 80px;
-}
-
+	}
 .magnet {
-	
-	
+	height: 265px;
+	}
+.magnet img {
 	position: relative;
-	top: -800px;
-	left: 360px;
+	top: -645px;
+	left: 435px;
+	}
+.scroll_button {
+	position: absolute;
+	top: 760px;
+	left: calc(50% - 45px);
+	
+	}
+.scroll_button a {
+	font-family: 'Hind', sans-serif;
+	text-transform: uppercase;
+	font-weight: 600;
+	color: #fff;
+	}
 
+	/*------SECTION-------*/
+.movie {
+	height: 618px;
+	background-image: url(../img/movie_bg.png);
+	background-size: contain;
+	background-repeat: no-repeat;
+	cursor: pointer;
+	position: relative;
+   	}	
+
+.movie:hover::after {
+	background: rgba(245,245,245, 0.5);
+	content: "";
+	display: block;
+	height: 100%;
+	left: 0;
+	position: absolute;
+	top: 0;
+	width: 100%;
+	z-index: 1;
+ 	}
+.movie img {
+	position: absolute;
+	top: calc(50% - 60px);
+	left: calc(50% - 60px);
+	z-index: 777;
+	display: none;
+	}
+.movie:hover > img {
+	display: block;
+ 	}
+.text_wrap {
+ 	margin-left: 50px;
+ 	}
+.text h3 {
+	font-size: 25px;
+	font-family: 'Hind', sans-serif;
+	text-transform: uppercase;
+	color: #3a4a62;
+	margin-top: 130px;
+	margin-bottom: 40px;
+	}
+.text ul li {
+	font-size: 18px;
+	font-family: 'Hind', sans-serif;
+	background-image: url(../img/arrow.png);
+	background-position: 0 10%;
+	background-repeat: no-repeat;
+	padding-left: 30px;
+	}
+	/*------FOOTER-------*/
+.container_wrapper {
+	background-color: #3a4a62;
+	position: relative;
+	top: -1px;
+	}
+.container_wrapper h3 {
+	font-size: 35px;
+	font-family: 'Montserrat', sans-serif;
+	text-transform: uppercase;
+	color: #fff;
+	padding-top: 60px;
+	padding-bottom: 40px;
+	font-weight: bold;
+}	
+
+
+
+
+
+
+@media screen and (max-width: 1200px) {
+	.main {
+		max-height: 960px;
+	}
+
+	.scroll_button {
+		top: 865px;
+	}
 }
 
-
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 992px) {
+	.scroll_button {
+		top: 700px;
+	}
 	.main__content h1 {
 		font-size: 20px;
 		font-weight: 400;
@@ -95,21 +193,36 @@ font-family: 'Montserrat', sans-serif;
 	.main__content h2 {
 		font-size: 25px;
 	}
-	.button p {
+	.butt p {
 		font-size: 10px;
 	}
-    .button input  {
+    .butt input  {
     	font-size: 10px;
         padding: 5px 30px;
         font-weight: 400;
     }
     .white_bg {
 		height: 80px;
-		width: 350px;
+		width: 400px;
 		position: absolute;
 		top: -16px;
-		left: -100px;
+		left: -50px;
 		background: #fff;
 		border-radius: 80px;
 	}
+	.movie {
+		background-size: cover;
+		background-position: 50% 20%;
+		height: 367px;
+	}
+	.movie:hover > img {
+		display: none;
+ 	}
+ 	.text h3 {
+		margin-top: 50px;
+		margin-bottom: 40px;
+	}
+	
 }
+
+
