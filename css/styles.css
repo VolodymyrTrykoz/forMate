@@ -1,11 +1,8 @@
-/*
-font-family: 'Hind', sans-serif;
-font-family: 'Montserrat', sans-serif;
-*/
-
+	/*------HEADER-------*/
 a:hover {
 	text-decoration: none;
 }
+
 .container {
 	max-width: 1920px;
 	margin: 0 auto;
@@ -57,7 +54,7 @@ a:hover {
 	font-size: 17px;
 	font-weight: 600;
 	}
-.butt input {
+ input {
 	font-family: 'Montserrat', sans-serif;
 	display: block;
 	padding: 10px 88px;
@@ -69,7 +66,11 @@ a:hover {
 	border-radius: 25px;
 	margin-bottom: 130px;
 	position: absolute;
+	transition: 0.5s linear;
 	}
+ input:hover{
+	background-color: #c1541c;
+}	
 .white_bg {
 	height: 130px;
 	width: 600px;
@@ -91,16 +92,32 @@ a:hover {
 	position: absolute;
 	top: 760px;
 	left: calc(50% - 45px);
-	
 	}
+.scroll_button p {
+	transition: 0.5s linear;
+	}
+.scroll_button p:hover {
+	color: #c1541c;
+	} 	
 .scroll_button a {
 	font-family: 'Hind', sans-serif;
 	text-transform: uppercase;
 	font-weight: 600;
 	color: #fff;
 	}
+#triangle {
+	width: 58px;
+	height: 41px;
+	background-image: url(../img/triangle.png);
+	margin-left: 19px;
+	transition: 0.5s linear;
+}
+#triangle:hover {
+	background-image: url(../img/triangle_hover.png);
+}	
 
 	/*------SECTION-------*/
+
 .movie {
 	height: 618px;
 	background-image: url(../img/movie_bg.png);
@@ -134,12 +151,15 @@ a:hover {
 .text_wrap {
  	margin-left: 50px;
  	}
+.text_wrap input {
+ 	position: absolute;
+ 	}	
 .text h3 {
 	font-size: 25px;
 	font-family: 'Hind', sans-serif;
 	text-transform: uppercase;
 	color: #3a4a62;
-	margin-top: 130px;
+	margin-top: 50px;
 	margin-bottom: 40px;
 	}
 .text ul li {
@@ -150,6 +170,18 @@ a:hover {
 	background-repeat: no-repeat;
 	padding-left: 30px;
 	}
+.text ul li:last-child {
+	background-image: url(../img/heart.png);
+	background-position: 0 40%;
+	padding-top: 15px;
+	}	
+
+.second_but input {
+	position: relative;
+	margin-top: 30px;
+	margin-bottom: 30px;
+	}
+
 	/*------FOOTER-------*/
 .container_wrapper {
 	background-color: #3a4a62;
@@ -157,17 +189,14 @@ a:hover {
 	top: -1px;
 	}
 .container_wrapper h3 {
-	font-size: 35px;
+	font-size: 30px;
 	font-family: 'Montserrat', sans-serif;
 	text-transform: uppercase;
 	color: #fff;
-	padding-top: 60px;
-	padding-bottom: 40px;
+	padding-top: 40px;
+	padding-bottom: 30px;
 	font-weight: bold;
-}	
-
-
-
+	}
 
 
 
@@ -175,11 +204,31 @@ a:hover {
 	.main {
 		max-height: 960px;
 	}
-
 	.scroll_button {
 		top: 865px;
 	}
+	.text h3 {
+		margin-top: 20px;
+		margin-bottom: 30px;
+	}
+	.text h3 {
+		margin-top: 20px;
+		margin-bottom: 30px;
+	}
+	.text ul li {
+		font-size: 16px;
+	}
+	.second_but input {
+		margin-top: 0;
+		padding: 10px 85px;
+		font-size: 17px;
+	}
+	.movie {
+		height: 515px;
+	}
 }
+
+
 
 @media screen and (max-width: 992px) {
 	.scroll_button {
@@ -196,13 +245,19 @@ a:hover {
 	.butt p {
 		font-size: 10px;
 	}
-    .butt input  {
-    	font-size: 10px;
-        padding: 5px 30px;
+    .butt input, .second_but input {
+    	font-size: 15px;
+        padding: 7px 35px;
         font-weight: 400;
     }
+    .second_but input{
+    	font-size: 20px;
+    	margin-top: 50px;
+    	margin-bottom: 50px;
+    	margin-left: 10%;
+    }
     .white_bg {
-		height: 80px;
+		height: 90px;
 		width: 400px;
 		position: absolute;
 		top: -16px;
@@ -213,16 +268,33 @@ a:hover {
 	.movie {
 		background-size: cover;
 		background-position: 50% 20%;
-		height: 367px;
+		height: 335px;
 	}
 	.movie:hover > img {
-		display: none;
+		
+ 	}
+ 	.text_wrap {
+ 		margin-left: 10px;
  	}
  	.text h3 {
-		margin-top: 50px;
-		margin-bottom: 40px;
+		margin-top: 20px;
+		margin-bottom: 30px;
 	}
 	
 }
 
 
+@media screen and (max-width: 494px) {
+	.scroll_button {
+		top: 750px;
+	}
+	.movie img {
+	position: absolute;
+	top: calc(55% - 60px);
+	left: calc(55% - 60px);
+	}
+	.movie:hover > img {
+	width: 175px;
+	height: 150px;
+ 	}
+}
