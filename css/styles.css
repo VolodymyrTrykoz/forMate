@@ -151,27 +151,50 @@ a:hover {
 	-o-transition: 0.5s linear;
 	transition: 0.5s linear;
 	}
-.scroll_button p:hover {
-	color: #c1541c;
-	} 	
+
 .scroll_button a {
 	font-family: 'Hind', sans-serif;
 	text-transform: uppercase;
 	font-weight: 600;
 	color: #fff;
 	}
-#triangle {
-	width: 58px;
-	height: 41px;
-	background-image: url(../img/triangle.png);
-	margin-left: 19px;
-	-webkit-transition: 0.5s linear;
+.triangle {
+    width: 50%;
+	margin: auto;
+	position: absolute;
+	top: 200%; left: 50%;
+	-webkit-transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+    transform: translate(-50%,-50%);    
+	}
+.block1 {
+    content: ''; 
+    position: relative; /* Абсолютное позиционирование */
+    z-index: 1;
+    left: 0; 
+    top: 0; /* Положение треугольника */
+    border: 30px solid transparent; /* Прозрачные границы */
+    border-top: 35px solid white; /* Добавляем треугольник */
+    -webkit-transition: 0.5s linear;
 	-o-transition: 0.5s linear;
 	transition: 0.5s linear;
+	}
+.block {
+    content: ''; 
+    position: absolute; /* Абсолютное позиционирование */
+    margin: auto;
+    z-index: 2;
+    left: 14px; 
+    top: 6px; /* Положение треугольника */
+    border: 16px solid transparent; /* Прозрачные границы */
+    border-top: 19px solid #69cac3; /* Добавляем треугольник */
+    overflow: hidden;
+    }
+.triangle:hover >  .block1 {
+    border: 30px solid transparent; /* Прозрачные границы */
+    border-top: 35px solid #ff8141;
+
 }
-#triangle:hover {
-	background-image: url(../img/triangle_hover.png);
-}	
 
 	/*------SECTION-------*/
 
