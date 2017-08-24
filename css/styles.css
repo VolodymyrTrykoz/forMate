@@ -79,7 +79,14 @@ a:hover {
 
 .main__logo {
 	position: absolute;
-	top: -30px;
+	top: -20px;
+	width: 150px;
+	height: 80px;
+	background: #fff;
+	padding: 15px;
+	border-radius: 10px;
+	transform: rotateZ(-7deg);
+
 	}
 
 .main__content {
