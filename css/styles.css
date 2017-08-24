@@ -65,7 +65,14 @@ a:hover {
 .main {
 	max-height: 860px;
 	width: 100%;
-	background: url(../img/main_bg.jpg) no-repeat;
+	background: rgba(248,233,167,1);
+	background: -moz-linear-gradient(top, rgba(248,233,167,1) 0%, rgba(100,201,196,1) 100%);
+	background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(248,233,167,1)), color-stop(100%, rgba(100,201,196,1)));
+	background: -webkit-linear-gradient(top, rgba(248,233,167,1) 0%, rgba(100,201,196,1) 100%);
+	background: -o-linear-gradient(top, rgba(248,233,167,1) 0%, rgba(100,201,196,1) 100%);
+	background: -ms-linear-gradient(top, rgba(248,233,167,1) 0%, rgba(100,201,196,1) 100%);
+	background: linear-gradient(to bottom, rgba(248,233,167,1) 0%, rgba(100,201,196,1) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f8e9a7', endColorstr='#64c9c4', GradientType=0 );
 	background-size: cover;
 	position: relative;
 	}
