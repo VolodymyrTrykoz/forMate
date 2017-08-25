@@ -137,7 +137,7 @@ a:hover {
 	}
  input:hover{
 	background-color: #c1541c;
-}	
+	}	
 .white_bg {
 	height: 130px;
 	width: 600px;
@@ -173,9 +173,7 @@ a:hover {
 	color: #fff;
 	}
 .triangle {
-    width: 50%;
-	margin: auto;
-	position: absolute;
+    position: absolute;
 	top: 200%; left: 50%;
 	-webkit-transform: translate(-50%,-50%);
     -ms-transform: translate(-50%,-50%);
@@ -207,8 +205,7 @@ a:hover {
 .triangle:hover >  .block1 {
     border: 30px solid transparent; /* Прозрачные границы */
     border-top: 35px solid #ff8141;
-
-}
+	}
 
 	/*------SECTION-------*/
 
@@ -274,6 +271,10 @@ a:hover {
 	position: relative;
 	margin-top: 30px;
 	margin-bottom: 30px;
+	left: 50%;
+	-webkit-transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+    transform: translate(-50%,-50%);    
 	}
 
 	/*------FOOTER-------*/
@@ -348,7 +349,7 @@ a:hover {
     	font-size: 20px;
     	margin-top: 50px;
     	margin-bottom: 50px;
-    	margin-left: 25%;
+    	
     }
     .white_bg {
 		height: 90px;
